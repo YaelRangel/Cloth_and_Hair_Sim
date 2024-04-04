@@ -35040,8 +35040,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4507768418338118147}
   - component: {fileID: 6729586638167610166}
+  - component: {fileID: 6729586638167610167}
   m_Layer: 0
-  m_Name: ystraV001_003:polySurface1
+  m_Name: ystraV001_003:legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37079,6 +37080,7 @@ GameObject:
   - component: {fileID: 4592665344070240080}
   - component: {fileID: 7076264981440330779}
   - component: {fileID: 7076264981440330780}
+  - component: {fileID: 7076264981440330781}
   m_Layer: 0
   m_Name: ystraV001_003:mesh_coat
   m_TagString: Untagged
@@ -41414,14 +41416,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3882663358586950196}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0035097, y: 0.38802, z: 0.10496}
-  m_LocalScale: {x: 0.16927825, y: 0.16927825, z: 0.16927825}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.07667202, y: 0.3463, z: 0.144}
+  m_LocalScale: {x: 0.10327863, y: 0.10327863, z: 0.03961529}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1248908142127846965}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &4508468128853216879
 GameObject:
   m_ObjectHideFlags: 0
@@ -42054,7 +42056,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4110666535311020193}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -60063,6 +60065,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.19788145, y: -0.000004976988, z: -0.045039833}
     m_Extent: {x: 0.26402664, y: 0.128115, z: 0.31547093}
   m_DirtyAABB: 0
+--- !u!136 &6729586638167610167
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882663358586950196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.6152327
+  m_Height: 10.59184
+  m_Direction: 2
+  m_Center: {x: 0.761181, y: -1.085184, z: -3.059737}
 --- !u!1 &6730206976528663159
 GameObject:
   m_ObjectHideFlags: 0
@@ -63391,7 +63407,7 @@ Cloth:
   m_BendingStiffness: 0
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0
+  m_Damping: 0.3
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
@@ -67677,7 +67693,8 @@ Cloth:
     collisionSphereDistance: 3.4028235e+38
   - maxDistance: 0.2
     collisionSphereDistance: 3.4028235e+38
-  m_CapsuleColliders: []
+  m_CapsuleColliders:
+  - {fileID: 6729586638167610167}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
@@ -67687,6 +67704,25 @@ Cloth:
   - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
   - {x: 0.5, y: 0.5, z: 0}
   m_VirtualParticleIndices: 
+--- !u!1818360609 &7076264981440330781
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110666535311020193}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationOffset: {x: -90, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 4507768418338118147}
+    weight: 1
 --- !u!1 &7076374209685176178
 GameObject:
   m_ObjectHideFlags: 0
