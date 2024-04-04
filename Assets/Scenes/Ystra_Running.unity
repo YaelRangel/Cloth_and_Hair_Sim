@@ -60075,10 +60075,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.6152327
-  m_Height: 10.59184
+  m_Radius: 1.9026409
+  m_Height: 11.3178005
   m_Direction: 2
-  m_Center: {x: 0.761181, y: -1.085184, z: -3.059737}
+  m_Center: {x: 0.761181, y: -1.0570407, z: -3.138752}
 --- !u!1 &6730206976528663159
 GameObject:
   m_ObjectHideFlags: 0
@@ -67694,7 +67694,7 @@ Cloth:
   - maxDistance: 0.2
     collisionSphereDistance: 3.4028235e+38
   m_CapsuleColliders:
-  - {fileID: 6729586638167610167}
+  - {fileID: 0}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
